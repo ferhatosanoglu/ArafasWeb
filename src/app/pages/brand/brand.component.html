@@ -1,0 +1,25 @@
+<div class="row">
+  <div class="col-12"><h1 class="text-center">Our Brands</h1></div>
+  <div class="col-12 px-5">
+    <div class="input-group input-group-lg mb-3">
+      <span class="input-group-text" id="basic"
+        ><i class="bi bi-search"></i
+      ></span>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Search"
+        aria-label="Search"
+        aria-describedby="button"
+      />
+      <button class="btn btn-dark ms-2 fs-6" type="button" id="button">
+        Add New Brand+
+      </button>
+    </div>
+  </div>
+  <div class="col-12 px-5">
+    <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-4">
+      <app-card *ngFor="let item of brandList" [data]="item"></app-card>
+    </div>
+  </div>
+</div>

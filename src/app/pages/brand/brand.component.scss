@@ -1,0 +1,10 @@
+.input-group-text{
+    background-color: transparent;
+    border-right: none !important;
+}
+.form-control{
+    border-left: none !important;
+    &:focus{
+        box-shadow: none;
+    }
+}
